@@ -1,0 +1,126 @@
+
+
+#blogi {
+  border: 10px solid black;
+  padding: 15px;
+  border-image: url(https://maquillaje-coreano.com/wp-content/uploads/2019/01/maquillaje-coreano-de-ojos.jpg) 30 stretch;
+}
+
+#blogclothes {
+  border: 10px solid black;
+  padding: 15px;
+  border-image: url(https://i.pinimg.com/originals/80/88/9a/80889a65e1238a59a6c3b4a916d605ca.jpg) 30 stretch;
+}
+
+
+button {
+font-family: cursive;
+      }
+
+input[type=text] {
+  width: 100px;
+  -webkit-transition: width .35s ease-in-out;
+  transition: width .35s ease-in-out;
+}
+input[type=text]:focus {
+  width: 250px;
+}
+
+h2 {
+  text-align: center;
+}
+
+footer {
+	/*clave: valor;*/        /*vamos a ver el borde en este caso de 10 pixeles con color negro solido*/
+    text-align: center;
+    padding: 5px;           /*espacio interno entre borde y margen*/
+    margin top: 5px;
+       }
+
+body {
+  background-color: #fcb1ab;
+     } /*que color queremos de fondo*/
+
+h1, h6 {
+  color: crimson;
+  text-align: center;
+  letter-spacing: 5px;
+   }
+
+nav {
+	text-align: center;
+	letter-spacing: 5px;
+          }
+
+
+p, li, a, div {
+	text-align: center;
+	letter-spacing: 5px;
+          }
+body {
+  border: 1px solid gray;
+  padding: 8px;
+}
+
+
+#logo {border-radius: 50%;}   
+
+img {
+	height:200px;
+    display:block;
+    margin:auto;
+}
+
+#cor {
+    height:400px;
+    margin:auto;
+}
+
+#producto1, #producto2, #producto3, #producto4, #producto5, #producto6{
+	height:30px;
+	border-radius: 30px;
+    display:block;
+    margin:auto;	
+}
+
+nav {margin: 0px;}
+
+header, nav, main, section, aside, article, footer {
+	padding: 10px;
+	margin: 50px;
+}
+.newsletter {
+	   background-color: #fffacd;
+	   justify-content:s; 
+	   margin-right: 400px;
+       margin-left: 400px;
+}
+
+.grid-container {
+   display: inline-grid;
+   text-align: center;
+   grid-gap: 10px;
+   padding: 50px;
+  /* background-color: #2196F3;color de grid*/
+   grid : auto / auto auto;
+  /* justify-content: space-around;/*grid te odio D:
+   grid :auto / auto auto auto; 
+  display:grid;*/
+  ;
+    }
+
+.pagination a {      /*formato de coso de paginas*/
+  color: black;
+  border-radius: 5px;
+  float: center;/*uala, en el centro perri*/
+  padding: 8px 16px;
+}
+
+.pagination a.active { /*formato de coso de paginas, el elegido de momento*/
+  background-color: palevioletred;
+  color: black; 
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;} /*formato de coso de paginas cundo no activ*/
+
