@@ -1,5 +1,10 @@
 
 
+header, main, section, article, aside, footer {
+	border: 1px black solid; /*marca los bordes de todo*/
+	margin: 10px;
+	padding: 10px;
+}
 #blogi {
   border: 10px solid black;
   padding: 15px;
@@ -12,12 +17,13 @@
   border-image: url(https://i.pinimg.com/originals/80/88/9a/80889a65e1238a59a6c3b4a916d605ca.jpg) 30 stretch;
 }
 
+#blogjewelry {
+  border: 10px solid black;
+  padding: 15px;
+  border-image: url(https://i.pinimg.com/originals/80/88/9a/80889a65e1238a59a6c3b4a916d605ca.jpg) 30 stretch;
+}
 
-button {
-font-family: cursive;
-      }
-
-input[type=text] {
+input[type=text] { /*para que la barritas de busqueda se alargen*/
   width: 100px;
   -webkit-transition: width .35s ease-in-out;
   transition: width .35s ease-in-out;
@@ -47,16 +53,17 @@ h1, h6 {
   letter-spacing: 5px;
    }
 
-nav {
+nav { /*centra el "menu" de enlaces directos*/
 	text-align: center;
 	letter-spacing: 5px;
           }
 
 
-p, li, a, div {
+p, li, a, div { /*alinea buscador, news, y paginas*/
 	text-align: center;
 	letter-spacing: 5px;
           }
+
 body {
   border: 1px solid gray;
   padding: 8px;
@@ -71,56 +78,53 @@ img {
     margin:auto;
 }
 
-#cor {
-    height:400px;
-    margin:auto;
-}
-
-#producto1, #producto2, #producto3, #producto4, #producto5, #producto6{
-	height:30px;
-	border-radius: 30px;
-    display:block;
-    margin:auto;	
-}
-
 nav {margin: 0px;}
 
 header, nav, main, section, aside, article, footer {
 	padding: 10px;
 	margin: 50px;
 }
-.newsletter {
-	   background-color: #fffacd;
-	   justify-content:s; 
+
+.newsletter {/*cuadro blanco de fondo*/
+	   background-color: #fffacd; 
 	   margin-right: 400px;
        margin-left: 400px;
 }
 
 .grid-container {
-   display: inline-grid;
-   text-align: center;
-   grid-gap: 10px;
-   padding: 50px;
-  /* background-color: #2196F3;color de grid*/
-   grid : auto / auto auto;
-  /* justify-content: space-around;/*grid te odio D:
-   grid :auto / auto auto auto; 
-  display:grid;*/
-  ;
+   display: inline-grid;/*noborrar*/
+   grid-template-columns: auto auto;/*noborrar*/
     }
 
 .pagination a {      /*formato de coso de paginas*/
   color: black;
-  border-radius: 5px;
+  border-radius: 10px;/*borde medio redondeado*/
   float: center;/*uala, en el centro perri*/
-  padding: 8px 16px;
+  padding: 8px 16px;/*tamaño*/
 }
 
 .pagination a.active { /*formato de coso de paginas, el elegido de momento*/
   background-color: palevioletred;
   color: black; 
-  border-radius: 5px;
-}
+     }
 
 .pagination a:hover:not(.active) {background-color: #ddd;} /*formato de coso de paginas cundo no activ*/
+
+
+@media only screen and (max-width: 300px){
+	section { grid-template-columns: repeat (1, 1fr);
+		 grid-template-rows: 1/13;
+		justify-content: center;}
+}aside {
+	display:none ;
+	justify-content: center;
+}
+
+
+
+/*oppa clothes*/
+.grCont {
+   display: inline-grid;/*noborrar*/
+   grid-template-columns: auto auto;/*noborrar*/
+    }
 
