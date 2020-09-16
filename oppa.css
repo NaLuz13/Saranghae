@@ -1,5 +1,4 @@
 
-
 header, main, section, article, aside, footer {
 	border: 1px black solid; /*marca los bordes de todo*/
 	margin: 10px;
@@ -111,13 +110,16 @@ header, nav, main, section, aside, article, footer {
 .pagination a:hover:not(.active) {background-color: #ddd;} /*formato de coso de paginas cundo no activ*/
 
 
-@media only screen and (max-width: 300px){
-	section { grid-template-columns: repeat (1, 1fr);
-		 grid-template-rows: 1/13;
-		justify-content: center;}
-}aside {
-	display:none ;
-	justify-content: center;
+
+
+@media (max-width: 1140px) {/*max pixeles iphone se*/
+ body {
+    background-color: lightblue;
+  }
+    .grid-container{
+       display: in line;
+    scale {object-fit: scale-down;}
+  }
 }
 
 
@@ -128,3 +130,39 @@ header, nav, main, section, aside, article, footer {
    grid-template-columns: auto auto;/*noborrar*/
     }
 
+
+/*Probando poner color y margenes diferentes en el html clothes, dentro todo en la misma hoja de CSS(oppa-central-usa color difrente arriba)*/
+
+.anather body {
+  background-color: #696969;
+	border: 5px black solid; /*marca los bordes de body*/
+	margin: 30px;
+	padding: 30px;
+}
+
+.grCont {
+   display: inline-grid;/*noborrar*/
+   grid-template-columns: auto auto;/*noborrar*/
+   	border: 5px black solid; /*marca los bordes de grid*/
+
+    }
+.grCont  div {   
+    border: 5px black solid; /*marca los bordes de cada div*/
+    color:  #40E0D0;/*color letras de contenedor*/
+	margin: 30px;/*separacion entre cada uno(?)*/
+}
+
+
+iframe{/*
+align-content: center;
+}
+
+
+/*Probando crear diferente grid para Jewelry (grid de 3 columnas*/
+
+.gridJewelry {
+	display: grid;/*la vuelve contenedor grid*/
+	grid-template-columns: 1fr 1fr 1fr ;/*3 columnas de 1fr cada una*/
+	grid-gap: 1em ;
+	background color: blue;
+}
