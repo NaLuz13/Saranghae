@@ -1,0 +1,57 @@
+h1, h6 {
+  color: crimson;
+  text-align: center;
+  letter-spacing: 5px;
+   }
+
+h3, h5 {
+  text-align: center;
+  letter-spacing: 5px;
+   }
+
+/*que color queremos de fondo*/
+.anather body {
+ background-color: #fcb1ab;
+ margin-left: 80px; 
+ margin-right:80px;
+}
+
+.grCont {
+   display: inline-grid;/*noborrar*/
+   grid-template-columns: auto auto;/*noborrar*/
+    }
+
+
+
+.grCont {
+   display: inline-grid;
+   grid-template-columns: auto auto;
+        }
+
+ /*formato de coso de paginas*/
+.pagination a {     
+  color: black;
+  border-radius: 10px;/*borde medio redondeado*/
+  float: center;
+  padding: 8px 16px;/*tamaño*/
+}
+/*formato de coso de paginas, el elegido de momento*/
+.pagination a.active { 
+  background-color: palevioletred;
+  color: black; 
+     }
+
+/*formato de coso de paginas cundo no activ*/
+.pagination a:hover:not(.active) {background-color: #ddd;} 
+
+
+/*max pixeles iphone se*/
+@media (max-width: 1000px) {
+ body {
+    background-color: lightblue;
+  }
+    .grid-container{
+       display: in line;
+    scale {object-fit: scale-down;}
+  }
+}

@@ -46,7 +46,7 @@ body {
   background-color: #fcb1ab;
      } /*que color queremos de fondo*/
 
-h1, h6 {
+h1, h5, h6 {
   color: crimson;
   text-align: center;
   letter-spacing: 5px;
@@ -69,11 +69,13 @@ body {
 }
 
 
-#logo {border-radius: 50%;}   
+#logo {
+  width:100px;
+}   
 
 img {
-	height:200px;
-    display:block;
+    width: 100%;
+	  display:block;
     margin:auto;
 }
 
@@ -86,8 +88,8 @@ header, nav, main, section, aside, article, footer {
 
 .newsletter {/*cuadro blanco de fondo*/
 	   background-color: #fffacd; 
-	   margin-right: 400px;
-       margin-left: 400px;
+	   margin: 100px;
+     padding: 100px;
 }
 
 .grid-container {
@@ -95,24 +97,30 @@ header, nav, main, section, aside, article, footer {
    grid-template-columns: auto auto;/*noborrar*/
     }
 
-.pagination a {      /*formato de coso de paginas*/
+
+
+ /*formato de coso de paginas*/
+.pagination a {     
   color: black;
   border-radius: 10px;/*borde medio redondeado*/
   float: center;/*uala, en el centro perri*/
   padding: 8px 16px;/*tamaño*/
 }
-
-.pagination a.active { /*formato de coso de paginas, el elegido de momento*/
+/*formato de coso de paginas, el elegido de momento*/
+.pagination a.active { 
   background-color: palevioletred;
   color: black; 
      }
-
-.pagination a:hover:not(.active) {background-color: #ddd;} /*formato de coso de paginas cundo no activ*/
-
-
+/*formato de coso de paginas cundo no activ*/
+.pagination a:hover:not(.active) {background-color: #ddd;} 
 
 
-@media (max-width: 1140px) {/*max pixeles iphone se*/
+#cont {
+  width: 50px;
+}
+
+
+@media (max-width: 1000px) {/*max pixeles iphone se*/
  body {
     background-color: lightblue;
   }
@@ -120,36 +128,6 @@ header, nav, main, section, aside, article, footer {
        display: in line;
     scale {object-fit: scale-down;}
   }
-}
-
-
-
-/*oppa clothes*/
-.grCont {
-   display: inline-grid;/*noborrar*/
-   grid-template-columns: auto auto;/*noborrar*/
-    }
-
-
-/*Probando poner color y margenes diferentes en el html clothes, dentro todo en la misma hoja de CSS(oppa-central-usa color difrente arriba)*/
-
-.anather body {
-  background-color: #696969;
-	border: 5px black solid; /*marca los bordes de body*/
-	margin: 30px;
-	padding: 30px;
-}
-
-.grCont {
-   display: inline-grid;/*noborrar*/
-   grid-template-columns: auto auto;/*noborrar*/
-   	border: 5px black solid; /*marca los bordes de grid*/
-
-    }
-.grCont  div {   
-    border: 5px black solid; /*marca los bordes de cada div*/
-    color:  #40E0D0;/*color letras de contenedor*/
-	margin: 30px;/*separacion entre cada uno(?)*/
 }
 
 
@@ -165,4 +143,12 @@ align-content: center;
 	grid-template-columns: 1fr 1fr 1fr ;/*3 columnas de 1fr cada una*/
 	grid-gap: 1em ;
 	background color: blue;
+}
+
+#terminos{
+   margin-left: 100px; 
+ margin-right:100px;
+}
+.terminos{
+  text-align: center;
 }
