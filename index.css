@@ -1,0 +1,154 @@
+
+header, main, section, article, aside, footer {
+	border: 1px black solid; /*marca los bordes de todo*/
+	margin: 10px;
+	padding: 10px;
+}
+#blogi {
+  border: 10px solid black;
+  padding: 15px;
+  border-image: url(https://maquillaje-coreano.com/wp-content/uploads/2019/01/maquillaje-coreano-de-ojos.jpg) 30 stretch;
+}
+
+#blogclothes {
+  border: 10px solid black;
+  padding: 15px;
+  border-image: url(https://i.pinimg.com/originals/80/88/9a/80889a65e1238a59a6c3b4a916d605ca.jpg) 30 stretch;
+}
+
+#blogjewelry {
+  border: 10px solid black;
+  padding: 15px;
+  border-image: url(https://i.pinimg.com/originals/80/88/9a/80889a65e1238a59a6c3b4a916d605ca.jpg) 30 stretch;
+}
+
+input[type=text] { /*para que la barritas de busqueda se alargen*/
+  width: 100px;
+  -webkit-transition: width .35s ease-in-out;
+  transition: width .35s ease-in-out;
+}
+input[type=text]:focus {
+  width: 250px;
+}
+
+h2 {
+  text-align: center;
+}
+
+footer {
+	/*clave: valor;*/        /*vamos a ver el borde en este caso de 10 pixeles con color negro solido*/
+    text-align: center;
+    padding: 5px;           /*espacio interno entre borde y margen*/
+    margin top: 5px;
+       }
+
+body {
+  background-color: #fcb1ab;
+     } /*que color queremos de fondo*/
+
+h1, h5, h6 {
+  color: crimson;
+  text-align: center;
+  letter-spacing: 5px;
+   }
+
+nav { /*centra el "menu" de enlaces directos*/
+	text-align: center;
+	letter-spacing: 5px;
+          }
+
+
+p, li, a, div { /*alinea buscador, news, y paginas*/
+	text-align: center;
+	letter-spacing: 5px;
+          }
+
+body {
+  border: 1px solid gray;
+  padding: 8px;
+}
+
+
+#logo {
+  width:100px;
+}   
+
+img {
+    width: 100%;
+	  display:block;
+    margin:auto;
+}
+
+nav {margin: 0px;}
+
+header, nav, main, section, aside, article, footer {
+	padding: 10px;
+	margin: 50px;
+}
+
+.newsletter {/*cuadro blanco de fondo*/
+	   background-color: #fffacd; 
+	   margin: 100px;
+     padding: 100px;
+}
+
+.grid-container {
+   display: inline-grid;/*noborrar*/
+   grid-template-columns: auto auto;/*noborrar*/
+    }
+
+
+
+ /*formato de coso de paginas*/
+.pagination a {     
+  color: black;
+  border-radius: 10px;/*borde medio redondeado*/
+  float: center;/*uala, en el centro perri*/
+  padding: 8px 16px;/*tamaño*/
+}
+/*formato de coso de paginas, el elegido de momento*/
+.pagination a.active { 
+  background-color: palevioletred;
+  color: black; 
+     }
+/*formato de coso de paginas cundo no activ*/
+.pagination a:hover:not(.active) {background-color: #ddd;} 
+
+
+#cont {
+  width: 50px;
+}
+
+
+@media (max-width: 1000px) {/*max pixeles iphone se*/
+ body {
+    background-color: lightblue;
+  }
+    .grid-container{
+       display: in line;
+    scale {object-fit: scale-down;}
+  }
+}
+
+
+iframe{/*
+align-content: center;
+}
+
+
+/*Probando crear diferente grid para Jewelry (grid de 3 columnas*/
+
+.gridJewelry {
+	display: grid;/*la vuelve contenedor grid*/
+	grid-template-columns: 1fr 1fr 1fr ;/*3 columnas de 1fr cada una*/
+	grid-gap: 1em ;
+	background color: blue;
+}
+
+#terminos{
+   margin-left: 100px; 
+ margin-right:100px;
+}
+.terminos{
+  text-align: center;
+}
